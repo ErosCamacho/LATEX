@@ -1,0 +1,160 @@
+@ARTICLE{article-full,
+  Author={L[eslie] A. Aamport },
+  Journal={\mbox{G-Animal's} Journal },
+  Month={July },
+  Note={This is a full ARTICLE entry },
+  Number={7 },
+  Pages={73+ },
+  Title={The Gnats and Gnus Document Preparation System },
+  Volume={41 },
+  Year={1986 }
+}
+
+@INBOOK{inbook-full,
+  Address={Reading, Massachusetts },
+  Author={Donald E. Knuth },
+  Chapter={1.2 },
+  Edition={Second },
+  Month={10~January },
+  Note={This is a full INBOOK entry },
+  Pages={10--119 },
+  Publisher={Addison-Wesley },
+  Series={The Art of Computer Programming },
+  Title={Fundamental Algorithms },
+  Type={Section },
+  Volume={1 },
+  Year={1973 }
+}
+
+@BOOK{book-full,
+  Address={Reading, Massachusetts },
+  Author={Donald E. Knuth },
+  Edition={Second },
+  Month={10~January },
+  Note={This is a full BOOK entry },
+  Publisher={Addison-Wesley },
+  Series={The Art of Computer Programming },
+  Title={Seminumerical Algorithms },
+  Volume={2 },
+  Year={1981 }
+}
+
+@BOOKLET{booklet-full,
+  Address={Stanford, California },
+  Author={Jill C. Knvth },
+  Howpublished={Vernier Art Center },
+  Month={February },
+  Note={This is a full BOOKLET entry },
+  Title={The Programming of Computer Art },
+  Year={1988 }
+}
+
+@INCOLLECTION{incollection-full,
+  Address={New York },
+  Author={Daniel D. Lincoll },
+  Booktitle={High Speed Computer and Algorithm Organization },
+  Chapter={3 },
+  Edition={Third },
+  Editor={David J. Lipcoll and D. H. Lawrie and A. H. Sameh },
+  Month={September },
+  Note={This is a full INCOLLECTION entry },
+  Number={23 },
+  Pages={179--183 },
+  Publisher={Academic Press },
+  Series={Fast Computers },
+  Title={Semigroups of Recurrences },
+  Type={Part },
+  Year={1977 }
+}
+
+@MANUAL{manual-full,
+  Address={Silicon Valley },
+  Author={Larry Manmaker },
+  Edition={Silver },
+  Month={April-May },
+  Note={This is a full MANUAL entry },
+  Organization={Chips-R-Us },
+  Title={The Definitive Computer Manual },
+  Year={1986 }
+}
+
+@MASTERSTHESIS{mastersthesis-full,
+  Address={English Department },
+  Author={{\'{E}}douard Masterly },
+  Month={June-August },
+  Note={This is a full MASTERSTHESIS entry },
+  School={Stanford University },
+  Title={Mastering Thesis Writing },
+  Type={Master's project },
+  Year={1988 }
+}
+
+@MISC{misc-full,
+  Author={Joe-Bob Missilany },
+  Howpublished={Handed out at O'Hare },
+  Month={October },
+  Note={This is a full MISC entry },
+  Title={Handing out random pamphlets in airports },
+  Year={1984 }
+}
+
+@INPROCEEDINGS{inproceedings-full,
+  Address={Boston },
+  Author={Alfred V. Oaho and Jeffrey D. Ullman and Mihalis Yannakakis },
+  Booktitle={Proc. Fifteenth Annual ACM Symposium on the Theory of Computing },
+  Editor={Wizard V. Oz and Mihalis Yannakakis },
+  Month={March },
+  Note={This is a full INPROCEDINGS entry },
+  Number={17 },
+  Organization={The OX Association for Computing Machinery },
+  Pages={133--139 },
+  Publisher={Academic Press },
+  Series={All ACM Conferences },
+  Title={On Notions of Information Transfer in {VLSI} Circuits },
+  Year={1983 }
+}
+
+@PROCEEDINGS{proceedings-full,
+  Address={Boston },
+  Editor={Wizard V. Oz and Mihalis Yannakakis },
+  Month={March },
+  Note={This is a full PROCEEDINGS entry },
+  Number={17 },
+  Organization={The OX Association for Computing Machinery },
+  Publisher={Academic Press },
+  Series={All ACM Conferences },
+  Title={Proc. Fifteenth Annual Symposium on the Theory of Computing },
+  Year={1983 }
+}
+
+@PHDTHESIS{phdthesis-full,
+  Address={Department of French },
+  Author={F. Phidias Phony-Baloney },
+  Month={June-August },
+  Note={This is a full PHDTHESIS entry },
+  School={Fanstord University },
+  Title={Fighting Fire with Fire: Festooning {F}rench Phrases },
+  Type={{PhD} Dissertation },
+  Year={1988 }
+}
+
+@TECHREPORT{techreport-full,
+  Address={Computer Science Department, Fanstord, California },
+  Author={Tom T{\'{e}}rrific },
+  Institution={Fanstord University },
+  Month={October },
+  Note={This is a full TECHREPORT entry },
+  Number={7 },
+  Title={An {$O(n \log n / \! \log\log n)$} Sorting Algorithm },
+  Type={Wishful Research Result },
+  Year={1988 }
+}
+
+@UNPUBLISHED{unpublished-full,
+  Author={Ulrich {\"{U}}nderwood and Ned {\~N}et and Paul {\={P}}ot },
+  Month={November, December },
+  Note={Talk at Fanstord University (this is a full UNPUBLISHED entry) },
+  Title={Lower Bounds for Wishful Research Results },
+  Year={1988 }
+}
+

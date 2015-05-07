@@ -1,0 +1,26 @@
+\documentclass[a4paper,12pt]{article}
+ \usepackage[latin1]{inputenc}
+ \usepackage[T1]{fontenc}
+ \usepackage[spanish]{babel}
+ \usepackage[pdftex]{graphicx}
+ \usepackage[vflt]{floatflt}
+
+
+ \begin{document}
+\begin{floatingfigure}{2.5cm}
+\includegraphics[width=2.5cm]{coche.jpg}
+\caption{El cochecito}
+\end{floatingfigure}
+
+Este entorno sólo funciona si se pone antes de un párrafo, la
+figura aparecerá lo más cerca del lugar en donde se haya escrito,
+esto quiere decir que \LaTeX{} primero intenta poner la figura en
+la página actual, si no encuentra suficiente espacio vertical
+entonces la coloca en la página siguiente.
+
+El argumento [r] es un argumento opcional que hace que el gráfico
+salga a la derecha del texto (no importa lo que se haya puesto al
+cargar la librería).
+
+
+ \end{document}

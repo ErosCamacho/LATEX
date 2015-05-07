@@ -1,0 +1,22 @@
+ \documentclass[a4paper,12pt]{article}
+ \usepackage[latin1]{inputenc}
+ \usepackage[T1]{fontenc}
+ \usepackage[spanish]{babel}
+ \usepackage{amsmath,amsthm}
+
+ \begin{document}
+
+\section{\LaTeX{} un nuevo sistema de escritura}
+
+Leslie Lamport, en \cite{article-full}, describe \dots
+
+Como se puede ver en \cite{book-full}, \LaTeX{} es \dots
+
+En \cite[página 45]{inbook-full} tenemos un ejemplo de \dots
+
+\nocite{manual-full}
+
+\bibliography{ejemplo}
+\bibliographystyle{alpha}
+
+\end{document}

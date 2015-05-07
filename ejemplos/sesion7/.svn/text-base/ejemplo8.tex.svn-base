@@ -1,0 +1,123 @@
+\documentclass[portrait,final,a0paper,fontscale=0.277]{baposter}
+ \usepackage[latin1]{inputenc}
+ \usepackage[T1]{fontenc}
+ \usepackage[spanish]{babel}
+ \usepackage{graphicx}
+
+%%% Color Definitions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\definecolor{bordercol}{RGB}{40,40,40}
+\definecolor{headercol1}{RGB}{186,215,230}
+\definecolor{headercol2}{RGB}{80,80,80}
+\definecolor{headerfontcol}{RGB}{0,0,0}
+\definecolor{boxcolor}{RGB}{186,215,230}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Begin of Document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Definición del fondo
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\background{
+	\begin{tikzpicture}[remember picture,overlay]%
+	\draw (current page.north west)+(-2em,2em) node[anchor=north west]
+	{\includegraphics[height=1.1\textheight]{mifondo}};
+	\end{tikzpicture}
+}
+
+\begin{poster}%
+  % Poster Options
+  {
+    background=user,
+    borderColor=bordercol,
+  	headerColorOne=headercol1,
+  	headerColorTwo=headercol2,
+  	headerFontColor=headerfontcol,
+    boxColorOne=boxcolor,
+    headershape=roundedright,
+  	textborder=rectangle,
+	headerborder=open,
+  }
+  % Eye Catcher
+  { %\includegraphics[height=7em]{images/search_tree_ex1-crop.pdf}
+  } 
+  % Title
+  {\sf\bf Mi primer póster en \LaTeX}
+  % Authors
+  {
+  	Yo mismo \\
+  	{\small micorreo@uco.es}
+  }
+  % University logo
+  {% 
+  	   \includegraphics[width=4cm]{uco_logo}
+  }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+  \headerbox{Contribución}{name=contribution,column=0,row=0}{
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at aliquam turpis. Nunc neque dui, consequat et tortor vitae, tincidunt euismod mauris. Integer elit dui, commodo ultricies neque eu, elementum feugiat libero. Curabitur in nisi sagittis, lacinia erat at, elementum eros. In eu est quis turpis ultrices pulvinar quis ut turpis. Nullam nunc neque, aliquam id congue vel, auctor ultricies est. Maecenas tincidunt, nunc eu viverra lacinia, ante purus vulputate ipsum, at pretium ipsum quam ut tellus. Aliquam eleifend consectetur tempus. Fusce ullamcorper ut quam ac bibendum. 
+  }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\headerbox{Modelo}{name=model,column=0,below=contribution}{
+   Etiam vel enim eu turpis faucibus condimentum. Pellentesque nec erat sed augue dictum semper id ac urna. Etiam id tellus felis. Phasellus dapibus dolor massa, vitae consequat ipsum malesuada id. Proin sapien est, cursus gravida pulvinar nec, vehicula vel mauris. Integer gravida et ante ut commodo. Ut pulvinar hendrerit libero. 
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\headerbox{Más información}{name=information,column=0,below=model}{
+    Phasellus vel vulputate urna. Suspendisse sed sapien congue, euismod odio at, iaculis nunc. Phasellus pulvinar pharetra elit in facilisis. Curabitur vel odio enim. Vivamus id nulla eget augue mattis molestie. Aliquam magna ante, suscipit vitae felis in, hendrerit porttitor arcu. Mauris a leo pellentesque, consequat lacus in, pharetra lorem.
+    
+    Duis quis ornare lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed sit amet sapien euismod, molestie justo et, egestas tortor. Morbi congue, nisl eget molestie cursus, dui felis pulvinar magna, id consectetur elit tellus vitae diam. Vestibulum vestibulum mauris non auctor gravida. Suspendisse consequat lobortis ante, sit amet ultrices enim sodales vel. Maecenas ac dolor nisi. In ac dictum metus. Cras sem nulla, vehicula a auctor et, fermentum in magna. Proin volutpat, lorem et auctor varius, justo neque cursus lorem, ut lobortis ipsum nisl ultrices lacus.
+    
+    Sed lobortis magna at dui ultrices, a varius elit elementum. Phasellus eu neque in felis laoreet sagittis non ac tellus. Sed malesuada vehicula leo eu vehicula. Vestibulum malesuada ut urna at ullamcorper. Pellentesque accumsan orci felis, ut pellentesque tortor sollicitudin non. Quisque sit amet dignissim dui. Vestibulum vel facilisis ligula. 
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\headerbox{Otra caja}{name=otra,column=1,span=2}{
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet nisi sit amet dolor egestas fringilla a nec nulla. Phasellus convallis luctus erat, et tristique velit dignissim hendrerit. Donec ullamcorper risus in sem hendrerit molestie. Aliquam dignissim arcu id enim gravida fringilla. Ut eu commodo velit. Integer non feugiat libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+    
+    Duis fringilla elit eget lorem congue, a laoreet magna accumsan. Pellentesque eu metus ullamcorper, congue augue vitae, elementum risus. Mauris tincidunt leo vel nunc ornare aliquet. Ut convallis viverra tristique. Proin vestibulum pretium orci at laoreet. Ut eleifend ipsum massa, nec imperdiet tellus commodo non. Aliquam interdum nunc non tellus lobortis, eu elementum mi semper. Proin mauris lectus, ornare eu turpis et, lacinia dictum tortor. Duis tempor sapien eget justo faucibus, ac lacinia turpis ullamcorper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ullamcorper turpis ligula, nec placerat massa lacinia ut.
+    
+    Donec vitae vehicula sapien. Sed at neque urna. Proin consectetur nibh tellus. Integer lorem ipsum, lacinia in mattis vitae, bibendum sed erat. Cras pretium erat ac elit mattis, vitae ultricies lacus fermentum. Pellentesque non nisl quis dui imperdiet fermentum nec id urna. Fusce sagittis ultrices ipsum, id volutpat est. Suspendisse in quam vitae velit placerat vulputate a non nulla. Praesent vitae sem consectetur, pretium leo eget, bibendum dui. Pellentesque vitae augue quis neque pharetra sagittis.
+    
+
+        
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\headerbox{Resultados}{name=results,column=1,span=2,below=otra}{
+    Praesent eu risus non lectus facilisis sodales vitae id purus. Nulla facilisis vestibulum ipsum, non tempus odio euismod ut. Vestibulum nisi ante, interdum in turpis ac, lacinia tempus neque. Aliquam ac commodo est. Mauris et gravida metus. Integer lacus orci, dictum vitae lacinia quis, condimentum eu metus. Mauris et malesuada tellus. Curabitur at auctor ipsum. Integer ligula turpis, condimentum nec tellus in, ornare blandit mauris. Phasellus vitae augue nec nibh posuere auctor. Duis cursus porta condimentum. Nulla elementum mauris sed fringilla bibendum. Quisque condimentum dapibus est semper sagittis. 
+    
+    \begin{center}
+	    \includegraphics[width=0.5\linewidth,angle=-90]{resultados}
+    \end{center}
+} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \headerbox{Dirección web}{name=web,column=1,below=results}{
+   Curabitur vitae leo quam. Suspendisse nec feugiat enim, ac tempor eros. Integer ac consectetur diam. Curabitur ultricies lacus eget mauris aliquet, vitae blandit velit commodo. 
+  }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \headerbox{Referencias}{name=references,column=2,below=results}{
+    \bibliographystyle{ieee}
+    \renewcommand{\section}[2]{\vskip 0.05em}
+      \begin{thebibliography}{1}\itemsep=-0.01em
+      \setlength{\baselineskip}{0.4em}
+      \bibitem{lorem}
+        Lorem ipsum dolor sit amet 
+        \newblock  consectetur adipiscing elit. 
+        \newblock {\em Curabitur sit amet nisi sit amet dolor egestas fringilla a nec nulla}
+      \end{thebibliography}
+   \vspace{0.3em}
+  }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \headerbox{Agradecimientos}{name=acknowledgments,column=1,span=2,above=bottom}{
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet nisi sit amet dolor egestas fringilla a nec nulla. Phasellus convallis luctus erat, et tristique velit dignissim hendrerit. Donec ullamcorper risus in sem hendrerit molestie. Aliquam dignissim arcu id enim gravida fringilla. Ut eu commodo velit. Integer non feugiat libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+  }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\end{poster}
+
+
+
+\end{document}
+

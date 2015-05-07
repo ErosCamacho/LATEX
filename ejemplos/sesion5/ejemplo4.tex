@@ -1,0 +1,19 @@
+ \documentclass[a4paper,12pt]{article}
+ \usepackage[latin1]{inputenc}
+ \usepackage[T1]{fontenc}
+ \usepackage[spanish]{babel}
+ \usepackage[pdftex]{graphicx}
+ \usepackage{subfigure}
+ %\DeclareGraphicsExtensions{.png,.pdf,.jpg,.gif}
+
+ \begin{document}
+
+\begin{figure}[!h]
+\centering \subfigure[Pequeño]{\includegraphics[width=3cm]{coche}}
+\subfigure[Grande]{\includegraphics[width=7cm]{coche}}
+\caption{Dos figuras con un mismo pie} \label{fig:coche}
+\end{figure}
+
+Aquí tenemos un ejemplo de inclusión de un gráfico con el entorno
+subfigure.
+ \end{document}

@@ -1,0 +1,49 @@
+ \documentclass[a4paper,12pt]{article}
+ \usepackage[latin1]{inputenc}
+ \usepackage[T1]{fontenc}
+ \usepackage{calc}
+ 
+ 
+ \newcommand{\english}{}
+ 
+ \newcommand{\traduce}{
+   \ifx \english \undefined
+      Texto en español
+ \else
+      Text in english
+ \fi
+ }
+ 
+ %--------------------------------------------------
+ 
+ % \asteriscos{n+1} inserta n asteriscos en el texto
+ \newcommand{\asteriscos}[1]{
+ \newcount\qq
+ \qq=0
+ \loop
+    \textasteriskcentered
+    \advance\qq by 1
+    \ifnum\qq < #1
+ \repeat 
+ }
+ 
+\begin{document}
+ 
+\section{Un condicional}
+ 
+ \traduce
+ 
+\section{Un bucle}
+ 
+ \asteriscos{30}
+ 
+ 
+ \section{Cálculos (usando el paquete calc)}
+ 
+
+ \newcounter{mine}
+ \setcounter{mine}{2*17+24*7}
+ $2\times 17 + 24 \times 7=$\themine
+ 
+
+ \end{document}

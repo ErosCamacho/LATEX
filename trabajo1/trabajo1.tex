@@ -1,0 +1,79 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+
+
+
+\begin{document}
+\title{Primero de Fisica}
+\author{Eros Camacho Ruiz}
+\date{\today}
+\maketitle	
+\tableofcontents
+\vspace{1cm}
+\begin{abstract}
+	A continuación voy a hacer unas pequeñas demostraciones de lo que he podido aprender este año. En concreto es El Principio de Bernouilli y la Experiencia de Young.
+\end{abstract}
+\section{Principio de Bernouilli}
+El Principio de Bernouilli es utilizado para el estudio del comportamiento de un fluido en un medio material.
+Se refiere a un medio homogéneo y lineal. Todos estos contenidos se encuentran en \cite[Sección de mecánica]{Tipler1}
+\subsection{Para una altura variable}
+	\begin{equation}
+	\label{eq:1}
+	P_0+\frac{1}{2}V^2_0\rho+{\rho}gh_0=P_f+\frac{1}{2}V^2_f\rho+{\rho}gh_f
+	\end{equation}
+\subsection{Para una altura constante}
+	\begin{equation}
+	\label{eq:2}
+		P_0+\frac{1}{2}V^2_0\rho=P_f+\frac{1}{2}V^2_f\rho
+	\end{equation}
+	\begin{equation}
+	\label{eq:3}
+		P_0-P_f={\Delta}P=\frac{1}{2}\rho\left(V^2_f-V^2_0\right)
+	\end{equation}
+	Como puede comprobarse en la Ecuación \ref{eq:3} la caída de presión depende la velocidad inicial y final del fluido.
+\section{Experiencia de Young}
+Voy a demostrar la Experiencia de Young, concluiremos diciendo que la intensidad luminosa de un haz de luz sólo va a depender de la diferencia de caminos que se establezca entre las aberturas. Todos estos contenidos se encuentran en \cite[Sección de electromagnetismo]{Tipler2}
+Si utilizamos el principio de superposición quedaría:
+	\begin{equation}
+	\label{eq:4}
+\psi_T=\psi_1+\psi_2=
+\begin{cases}
+\psi_1(r_1)=Acos({\omega}t-kr_1),  \\
+\psi_2(r_2)=Acos({\omega}t-kr_2),
+\end{cases} 
+	\end{equation}
+	\begin{equation}
+	\psi_T=\psi_1+\psi_2=Acos({\omega}t-kr_1)+Acos({\omega}t-kr_2)
+	\end{equation}
+	\begin{equation}
+	\label{eq:6}
+	\psi_T=A(cos({\omega}t-kr_1)+cos({\omega}t-kr_2))
+	\end{equation}
+Recurriendo a la ecuación \ref{eq:6} y como \dots $cosA+cosB=2cos(\frac{A+B}{2})cos(\frac{A+B}{2})$ la ecuación quedaría del siguiente modo:
+	\begin{equation}
+	\label{eq:7}
+	\psi_T=2A(cos({\omega}t-\frac{k{\Delta}r}{2})cos(\frac{k{\Delta}r}{2}))
+	\end{equation}
+
+Como la intensidad es proporcional a la amplitud al cuadrado la ecuación \ref{eq:7} quedaría del siguiente modo:
+	\begin{equation}
+	\label{eq:8}
+		I_T=4A^2cos^2\left(\frac{k{\Delta}r}{2}\right)=2A^2\left(1-cos\left(k{\Delta}r\right)\right)
+	\end{equation}
+
+Hemos podido demostrar gracias a la ecuación \ref{eq:8} que la intensidad en la experiencia de Young sólo depende de la diferencia de caminos entre los haces de luz.
+
+\begin{thebibliography}{2}
+	\bibitem{Tipler1}
+	P. A. Tipler., G. Mosca {\em Fí­sica para la ciencia y la tecnologí­a. Volumen 1. Mecánica, oscilaciones y ondas, termodinámica}
+	Reverté, 6ºed. , 2010
+	\bibitem{Tipler2}
+	P. A. Tipler., G. Mosca {\em Fí­sica para la ciencia y la tecnologí­a. Volumen 2. Electricidad y magnetismo. Luz}
+	 Reverté, 6ºed. , 2010
+	
+\end{thebibliography}
+
+\end{document}

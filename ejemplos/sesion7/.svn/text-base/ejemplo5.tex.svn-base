@@ -1,0 +1,59 @@
+\documentclass[portrait,final,a0paper,fontscale=0.277]{baposter}
+ \usepackage[latin1]{inputenc}
+ \usepackage[T1]{fontenc}
+ \usepackage[spanish]{babel}
+ \usepackage{graphicx}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Begin of Document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Definición del fondo
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\background{
+	\begin{tikzpicture}[remember picture,overlay]%
+	\draw (current page.north west)+(-2em,2em) node[anchor=north west]
+	{\includegraphics[height=1.1\textheight]{mifondo}};
+	\end{tikzpicture}
+}
+
+\begin{poster}%
+  % Poster Options
+  {
+  background=user,
+  }
+  % Eye Catcher
+  { %\includegraphics[height=7em]{images/search_tree_ex1-crop.pdf}
+  } 
+  % Title
+  {\sf\bf Mi primer póster en \LaTeX}
+  % Authors
+  {
+  	Yo mismo \\
+  	{\small micorreo@uco.es}
+  }
+  % University logo
+  {% 
+  	   \includegraphics[width=4cm]{uco_logo}
+  }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+  \headerbox{Contribución}{name=contribution,column=0,row=0}{
+      Éste es el contenido de esta caja
+  }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\headerbox{Model}{name=model,column=0,below=contribution}{
+    otro texto...
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{poster}
+
+
+
+\end{document}
+

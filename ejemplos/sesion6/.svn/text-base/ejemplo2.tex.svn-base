@@ -1,0 +1,31 @@
+ \documentclass[a4paper,12pt]{article}
+ \usepackage[latin1]{inputenc}
+ \usepackage[T1]{fontenc}
+ \usepackage[spanish]{babel}
+ \usepackage{amsmath,amsthm}
+
+ \begin{document}
+
+\section{\LaTeX{} un nuevo sistema de escritura}
+
+Leslie Lamport, en \cite{Lam94}, describe \dots
+
+Como se puede ver en \cite{Lam94,Cas03}, \LaTeX{} es \dots
+
+En \cite[página 45]{Oetiker} tenemos un ejemplo de \dots
+
+
+\begin{thebibliography}{10}
+\bibitem{Lam94}
+    L. Lamport.{\em \LaTeX: A Document Preparation System.}
+    Addison-Wesley, Reading, Massachusetts, second edition, 1994, ISBN 0-201-52983-1.
+\bibitem{Cas03}
+    B. Cascales Salina, P. Lucas Saurín, J.M. Mira Res, A.J. Pallarés Ruíz, S. Sánchez-Pedreño.
+    {\em El libro de \LaTeX.}
+    Pearson-Prentice-Hall, 2003.
+\bibitem{Oetiker}
+    T.~Oetiker, H.~Partl, I.~Hyna and E.~Schlegl.
+    {\em The Not So Short Introduction to \LaTeX $2\varepsilon$}.
+\end{thebibliography}
+
+\end{document}

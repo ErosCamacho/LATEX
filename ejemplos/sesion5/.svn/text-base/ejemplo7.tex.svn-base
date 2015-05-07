@@ -1,0 +1,27 @@
+ \documentclass[a4paper,12pt]{article}
+ \usepackage[latin1]{inputenc}
+ \usepackage[T1]{fontenc}
+ \usepackage[spanish]{babel}
+ \usepackage{pgf}
+
+\begin{document}
+
+\begin{pgfpicture}{0cm}{0cm}{3cm}{2cm}
+  \pgfputat{\pgfxy(1.,1.5)}{
+	    \pgfbox[center,center]{$\int_0^\infty x dx$} 
+	  }
+  \includegraphics[width=2cm]{coche}
+\end{pgfpicture} 
+
+\begin{pgfpictureboxed}{0cm}{0cm}{3cm}{2cm}
+  \pgfputat{\pgfxy(1.,1.5)}{
+	    \pgfbox[center,center]{$\int_0^\infty x dx$} 
+	  }
+  \pgfputat{\pgfxy(1.5,0.5)}{
+        \pgfbox[center,center]{
+              \pgfimage[width=1.5cm]{coche}
+           }
+      }
+\end{pgfpictureboxed}
+
+\end{document}

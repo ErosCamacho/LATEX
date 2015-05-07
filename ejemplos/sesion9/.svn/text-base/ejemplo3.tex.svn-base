@@ -1,0 +1,32 @@
+ \documentclass[a4paper,12pt]{article}
+ \usepackage[latin1]{inputenc}
+ \usepackage[T1]{fontenc}
+ 
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\Roman{section}.\alph{subsection}}
+
+%\renewcommand{\theequation}{\thesection.\arabic{equation}}
+
+\begin{document}
+
+
+ \section{Esto es una sección}
+ 
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat eros libero, ut mollis neque scelerisque eu. Cras ultricies venenatis diam eget vulputate. Aliquam sed rhoncus odio, quis laoreet risus. Proin a magna vitae erat gravida pharetra in id elit. Nunc ultricies dui mauris, nec mollis diam blandit non. Mauris aliquet justo sit amet erat mollis, non feugiat eros faucibus. Maecenas pretium pretium magna quis laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis ipsum ut lacinia lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+ 
+ \begin{equation}
+   x^2+y^2=z^2
+ \end{equation}
+ 
+ 
+ \subsection{Esta es una subsección}
+ 
+ Suspendisse eget leo tincidunt, vulputate turpis at, aliquam enim. Nunc porttitor feugiat diam. Ut pulvinar arcu at pulvinar ornare. Nam gravida erat adipiscing ligula facilisis, in rhoncus nunc imperdiet. Proin risus lectus, euismod a tortor eu, tempor mollis dui. Quisque hendrerit neque et lacus adipiscing, et egestas enim hendrerit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam non cursus ante, non hendrerit nulla. Nullam tristique tellus dui, quis vehicula dui pulvinar ac. Phasellus rutrum, justo in varius lacinia, neque enim vestibulum nunc, nec condimentum sapien nisi a lectus. Fusce pretium neque sit amet metus tempor vehicula. Nunc ac velit non turpis commodo dapibus. Suspendisse nisi nunc, hendrerit at erat sed, feugiat dapibus lacus. 
+ 
+ \section{Nueva sección}
+ 
+ Sed vitae magna nibh. Duis pretium, turpis a mattis feugiat, eros metus bibendum nisi, et aliquet dolor mauris in nisl. Quisque aliquam tellus sem, sed fringilla risus accumsan nec. Phasellus enim magna, feugiat ac nisl eu, ultrices ullamcorper metus. 
+ \begin{equation}
+ 1 \times 1 = 1
+ \end{equation}
+ \end{document}

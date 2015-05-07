@@ -1,0 +1,22 @@
+ \documentclass[a4paper,12pt]{article}
+ \usepackage[latin1]{inputenc}
+ \usepackage[T1]{fontenc}
+ 
+ \newcommand{\misdatos}{
+ \noindent
+ 	Pepito Pérez\\ 
+ 	Dpto. de burocracias y otros menesteres\\
+ 	Universidad de Córdoba\\
+ 	E-mail: {\bfseries pepito.pérez@uco.es}
+ }
+ 
+ 
+ \begin{document}
+ 
+ Aquellos que me quieran contactar pueden hacerlo en:
+ 
+ \misdatos
+ 
+ 
+ 
+ \end{document}
